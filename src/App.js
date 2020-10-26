@@ -1,25 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { AnimatedSwitch } from 'react-router-transition';
+import Toolbar from './Toolbar/Toolbar';
+import Home from './Home/Home';
+import SignUp from './SignUp/SignUp';
+import SignIn from './SignIn/SignIn';
 import './App.css';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      // Purple and green play nicely together.
+      main: '#000000',
+    },
+    secondary: {
+      // This is green.A700 as hex.
+      main: '#ffffff',
+    },
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <Toolbar />
+        <AnimatedSwitch
+          atEnter={{ opacity: 0 }}
+          atLeave={{ opacity: 0 }}
+          atActive={{ opacity: 1 }}
+          className='switch-wrapper'
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Route exact path='/' component={Home} />
+          <Route path='/signup' component={SignUp} />
+          <Route path='/signin' component={SignIn} />
+        </AnimatedSwitch>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 

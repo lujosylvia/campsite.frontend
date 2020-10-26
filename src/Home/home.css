@@ -1,0 +1,119 @@
+.connect-verbiage-container {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.hook-verbiage {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 30px;
+  color: #f5f2f2;
+}
+
+.start-now-button {
+  padding: 0.5rem 1rem 0.5rem 1rem !important;
+  border-radius: 0 !important;
+  background-color: white !important;
+  opacity: 0.8;
+}
+
+.start-now-button:hover {
+  opacity: 1;
+  transition: opacity ease-in-out 0.2s;
+}
+
+@media screen and (min-width: 1024px) {
+    .connect-verbiage-bold {
+      position: absolute;
+      font-family: "Segoe UI";
+      font-weight: bold;
+      font-size: 42px;
+      text-align: left;
+      color: #f5f2f2;
+      opacity: 1;
+    }
+    
+    .connect-verbiage-shadow {
+      position: absolute;
+      padding-left: 0.75rem;
+      padding-top: 0.75rem;
+      font-family: "Segoe UI";
+      font-weight: bold;
+      font-size: 42px;
+      text-align: left;
+      color: #f5f2f2;
+      opacity: 0.2;
+    }
+
+    .hook-verbiage {
+      font-family: "Segoe UI";
+      font-weight: bold;
+      font-size: 30px;
+      color: #f5f2f2;
+    }
+}
+  
+@media screen and (max-width: 1024px) {
+  .connect-verbiage-bold {
+    position: absolute;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 36px;
+    text-align: left;
+    color: #f5f2f2;
+    opacity: 1;
+  }
+  
+  .connect-verbiage-shadow {
+    position: absolute;
+    padding-left: 0.75rem;
+    padding-top: 0.75rem;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 36px;
+    text-align: left;
+    color: #f5f2f2;
+    opacity: 0.2;
+  }
+
+  .hook-verbiage {
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 26px;
+    color: #f5f2f2;
+  }
+  
+}
+  
+  
+@media screen and (max-width: 650px) {
+  .connect-verbiage-bold {
+    position: absolute;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    color: #f5f2f2;
+    opacity: 1;
+  }
+  
+  .connect-verbiage-shadow {
+    position: absolute;
+    padding-left: 0.75rem;
+    padding-top: 0.75rem;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    color: #f5f2f2;
+    opacity: 0.2;
+  }
+
+  .hook-verbiage {
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 20px;
+    color: #f5f2f2;
+  }
+}
+

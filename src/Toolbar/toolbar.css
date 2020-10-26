@@ -1,0 +1,121 @@
+.toolbar {
+    background-color: black !important;
+    color: white !important;
+}
+
+.flex-box {
+  display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.home-container {
+  order: 1;
+  display: flex;
+  align-items: stretch;
+  flex: 1 1 auto;
+  overflow: visible;
+}
+
+.nav-container-center {
+  align-self: center !important;
+  order: 2;
+  display: flex;
+  align-items: stretch;
+  flex: 1 1 auto;
+  overflow: visible;
+}
+
+.nav-container-right {
+  order: 3;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.nav-button {
+  white-space: nowrap;
+  margin-right: 1rem !important;
+  display: flex;
+  order: 3;
+}
+
+.nav-button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+  transform: scaleX(0);
+}
+
+.nav-button:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.toolbar-search {
+  min-width: 20rem;
+  position: relative;
+  border-radius: 5px;
+  padding: 0.2rem;
+  background-color: white;
+  opacity: 0.90;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: inherit;
+  justify-content: center;
+  transition: opacity ease-in-out 0.15s;
+}
+
+.toolbar-search-mobile {
+  top: 4rem;
+  position: absolute;
+  border-radius: 5px;
+  padding: 0.2rem;
+  background-color: white;
+  opacity: 0.90;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: inherit;
+  justify-content: center;
+  transition: opacity ease-in-out 0.15s;
+}
+
+.search-button {
+  z-index:1;
+  color: black;
+  position: absolute;
+  display: flex;
+  padding: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search-button-mobile {
+  z-index:1;
+  padding: 0.2rem 0.25rem 0rem 0.25rem;
+  margin: 0.1rem;
+}
+
+.search-button-mobile-toggled {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  transform: all 0.3s ease-in-out 0s;
+}
+
+.search-input {
+  padding-left: 2rem;
+}
+
+.toolbar-search:hover {
+  opacity: 1;
+}
